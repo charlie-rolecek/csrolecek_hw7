@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Undergraduate Student Lifestyle Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="Logo">
+		<h1>University of Iowa Student Life</h1>
+	</header>
+	<main>
+		<form action="thankyou.html" method="post">
+			<fieldset>
+				<legend>About You</legend>
+				<label for="name">Name: <span class="required">*</span></label>
+				<input type="text" id="name" name="name" autofocus required>
+				<br>
+				<label for="gender">Gender: <span class="required">*</span></label>
+				<input type="radio" id="male" name="gender" value="male" required>
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female" required>
+				<label for="female">Female</label>
+				<input type="radio" id="other" name="gender" value="other" required>
+				<label for="other">Other</label>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+                <label for="major">Select your major:</label>
+                <select id="major" name="major">
+                <option value="Business Analytics">Business Analytics</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="engineering">Engineering</option>
+                <option value="finance">Finance</option>
+                <option value="psychology">Psychology</option>
+                </select>
+                <br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone">
+				<br>
+				<label for="country">Country:</label>
+				<select id="country" name="country">
+					<option value="usa">USA</option>
+					<option value="canada">Canada</option>
+					<option value="mexico">Mexico</option>
+				</select>
+				<br>
+				<label for="interests">Interests:</label>
+				<input type="checkbox" id="sports" name="interests" value="sports">
+				<label for="sports">Sports</label>
+				<input type="checkbox" id="music" name="interests" value="music">
+				<label for="music">Music</label>
+				<input type="checkbox" id="movies" name="interests" value="movies">
+				<label for="movies">Movies</label>
+			</fieldset>
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+	<footer>
+		<p>Fields marked with <span class="required">*</span> are required.</p>
+	</footer>
+</body>
+</html>
